@@ -1,0 +1,38 @@
+# 1️⃣ Ignorer les fichiers de logs d'Airflow (mais garder la config essentielle)
+datalake_final/airflow/logs/
+!datalake_final/airflow/dags/
+!datalake_final/airflow/airflow.cfg
+!datalake_final/airflow/webserver_config.py
+
+# 2️⃣ Ignorer le dossier `jars/` sauf si certains fichiers sont nécessaires
+datalake_final/jars/
+
+# 3️⃣ Ignorer les fichiers système inutiles
+.DS_Store
+Thumbs.db
+
+# 4️⃣ Ignorer les fichiers temporaires et caches
+*.log
+*.tmp
+*.swp
+*.swo
+
+# 5️⃣ Ignorer les fichiers générés par Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 6️⃣ Ignorer les fichiers spécifiques aux IDE
+.vscode/
+.idea/
+*.iml
+
+# 7️⃣ Ignorer les fichiers et dossiers spécifiques à Git (sauf si déjà versionné)
+.datalake_final/.git/
+
+# 8️⃣ Ignorer les fichiers de compilation
+*.class
+*.o
+*.so
+*.exe
